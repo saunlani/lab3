@@ -51,8 +51,9 @@ namespace lab3
                 goto Start;
             }
 
-            Console.Write("\nContinue? (y/n): ");             string response;             response = Console.ReadLine();             if (response == "y")             {                 Console.WriteLine("");                 goto Start;             }             else {
-                Console.WriteLine("Bye!");
+            Console.Write($"\nWould you like to continue {username}? (y/n): ");             string response;             response = Console.ReadLine();
+             if (response == "y")             {                 Console.WriteLine("");                 goto Start;             }             else {
+                Console.WriteLine($"Bye {username}!");
             }
 
         }
